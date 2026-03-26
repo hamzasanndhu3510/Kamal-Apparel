@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kamal Apparel - Premium luxury fashion brand in Lahore specializing in men's and women's clothing, unstitched fabric, and traditional wear.">
+  <meta name="keywords" content="Kamal Apparel, luxury fashion, Lahore, men's clothing, women's clothing, unstitched fabric, traditional wear">
+  <meta name="author" content="Kamal Apparel">
+  <title>Kamal Apparel - Premium Luxury Fashion | Lahore</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <h1 class="brand-name">Kamal Apparel</h1>
+      <div class="loading-bar">
+        <div class="loading-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="marquee">
+      <div class="marquee-content">
+        <span class="marquee-item">🇵🇰 Delivery Nationwide</span>
+        <span class="marquee-item">✨ New Arrivals In Stock</span>
+        <span class="marquee-item">💳 COD Available</span>
+        <span class="marquee-item">🎨 Premium Fabrics, Timeless Style</span>
+        <span class="marquee-item">🇵🇰 Delivery Nationwide</span>
+        <span class="marquee-item">✨ New Arrivals In Stock</span>
+        <span class="marquee-item">💳 COD Available</span>
+        <span class="marquee-item">🎨 Premium Fabrics, Timeless Style</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-logo">Kamal Apparel</a>
+      
+      <ul class="navbar-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#men">Men</a></li>
+        <li><a href="#women">Women</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <div class="navbar-icon wishlist-btn">
+          <i class="fas fa-heart"></i>
+          <span class="wishlist-badge">0</span>
+        </div>
+        <div class="navbar-icon cart-btn">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge">0</span>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="mobile-menu-logo">Kamal Apparel</div>
+      <div class="mobile-menu-close">
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
+    <ul class="mobile-menu-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#men">Men</a></li>
+      <li><a href="#women">Women</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Slideshow -->
+  <section class="hero-slideshow" id="home">
+    <!-- Slide 1: Split Men/Women -->
+    <div class="hero-slide active">
+      <img src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=1920" alt="Men and Women Fashion" class="hero-slide-image">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Elegance for Every Story</h1>
+        <p class="hero-subtitle">Discover timeless fashion crafted for the modern you</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" onclick="document.querySelector('[data-filter=\'men\']').click(); document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">Shop Men</button>
+          <button class="btn btn-secondary" onclick="document.querySelector('[data-filter=\'women\']').click(); document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">Shop Women</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2: Men's Formal -->
+    <div class="hero-slide">
+      <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=1920" alt="Men's Fashion" class="hero-slide-image">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Crafted for the Modern Man</h1>
+        <p class="hero-subtitle">Premium fabrics, impeccable tailoring, timeless style</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" onclick="document.querySelector('[data-filter=\'men\']').click(); document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">Explore Men's Collection</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3: Unstitched Fabric -->
+    <div class="hero-slide">
+      <img src="https://images.unsplash.com/photo-1558769132-cb1aea3c8565?w=1920" alt="Unstitched Fabric" class="hero-slide-image">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Choose Your Fabric, Define Your Style</h1>
+        <p class="hero-subtitle">Premium unstitched fabrics for your perfect outfit</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" onclick="document.querySelector('[data-filter=\'unstitched\']').click(); document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">Shop Unstitched</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4: Women's Elegant -->
+    <div class="hero-slide">
+      <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1920" alt="Women's Fashion" class="hero-slide-image">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Timeless Femininity, Redefined</h1>
+        <p class="hero-subtitle">Elegant designs that celebrate your unique style</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" onclick="document.querySelector('[data-filter=\'women\']').click(); document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">Explore Women's Collection</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 5: Women's Unstitched -->
+    <div class="hero-slide">
+      <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1920" alt="Women's Fabric" class="hero-slide-image">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Luxury Fabrics, Yours to Create</h1>
+        <p class="hero-subtitle">Exquisite unstitched collections for every occasion</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" onclick="document.querySelector('[data-filter=\'unstitched\']').click(); document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">Shop Women's Fabric</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide Controls -->
+    <div class="slide-controls">
+      <span class="slide-dot active"></span>
+      <span class="slide-dot"></span>
+      <span class="slide-dot"></span>
+      <span class="slide-dot"></span>
+      <span class="slide-dot"></span>
+    </div>
+
+    <button class="slide-arrow slide-prev" aria-label="Previous slide">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="slide-arrow slide-next" aria-label="Next slide">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="stats-bar reveal-up">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Unique Styles</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Premium Fabric</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">COD</div>
+          <div class="stat-label">Nationwide</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collections -->
+  <section class="section" id="collections">
+    <div class="container">
+      <h2 class="section-title reveal-up">Our Collections</h2>
+      <p class="section-subtitle reveal-up">Explore our curated collections designed for every occasion</p>
+      
+      <div class="collections-grid">
+        <div class="collection-card reveal-left" onclick="document.querySelector('[data-filter=\'casual\']').click(); document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">
+          <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800" alt="Casual Pants" class="collection-image">
+          <div class="collection-overlay">
+            <h3 class="collection-title">Casual Pants</h3>
+            <p class="collection-count">Everyday comfort meets style</p>
+          </div>
+        </div>
+        
+        <div class="collection-card reveal-left" onclick="document.querySelector('[data-filter=\'formal\']').click(); document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">
+          <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800" alt="Formal Pants" class="collection-image">
+          <div class="collection-overlay">
+            <h3 class="collection-title">Formal Pants</h3>
+            <p class="collection-count">Professional elegance</p>
+          </div>
+        </div>
+        
+        <div class="collection-card reveal-left" onclick="document.querySelector('[data-filter=\'traditional\']').click(); document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">
+          <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800" alt="Traditional Wear" class="collection-image">
+          <div class="collection-overlay">
+            <h3 class="collection-title">Shalwar & Traditional</h3>
+            <p class="collection-count">Heritage meets modernity</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section" id="shop">
+    <div class="container">
+      <h2 class="section-title reveal-up">Featured Products</h2>
+      <p class="section-subtitle reveal-up">Discover our latest collection of premium fashion</p>
+      
+      <div class="products-header">
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="men" id="men">Men</button>
+          <button class="filter-btn" data-filter="women" id="women">Women</button>
+          <button class="filter-btn" data-filter="casual">Casual</button>
+          <button class="filter-btn" data-filter="formal">Formal</button>
+          <button class="filter-btn" data-filter="traditional">Traditional</button>
+          <button class="filter-btn" data-filter="unstitched">Unstitched</button>
+          <button class="filter-btn" data-filter="sale">Sale</button>
+        </div>
+        
+        <select id="sort-select" class="sort-select">
+          <option value="featured">Featured</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="newest">Newest First</option>
+        </select>
+      </div>
+      
+      <div class="products-grid" id="products-grid">
+        <!-- Products will be dynamically loaded here -->
+      </div>
+      
+      <div class="load-more-container">
+        <button class="btn btn-outline" id="load-more-btn">Load More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Banner -->
+  <section class="promo-banner reveal-up">
+    <div class="container">
+      <div class="promo-content">
+        <div class="promo-image-wrapper reveal-left">
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800" alt="Special Offer" class="promo-image">
+        </div>
+        <div class="promo-text reveal-right">
+          <h2>Special Eid Collection</h2>
+          <p>Get 15% off on all festive wear. Use code at checkout for exclusive savings on our premium collection.</p>
+          <div class="promo-code">
+            <span class="promo-code-text">EID2025</span>
+            <button class="copy-btn" id="copy-promo">
+              <i class="fas fa-copy"></i> Copy
+            </button>
+          </div>
+          <button class="btn btn-primary" onclick="document.querySelector('[data-filter=\'all\']').click(); document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title reveal-up">What Our Customers Say</h2>
+      <p class="section-subtitle reveal-up">Real experiences from our valued customers</p>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal-up">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Exceptional quality and perfect fit! The fabric is premium and the stitching is impeccable. Kamal Apparel has become my go-to for all formal wear."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AK</div>
+            <div class="author-info">
+              <h4>Ahmed Khan</h4>
+              <p class="author-location">Lahore</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card reveal-up">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Beautiful unstitched fabrics with intricate embroidery. The quality exceeded my expectations and the delivery was prompt. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SA</div>
+            <div class="author-info">
+              <h4>Sana Ali</h4>
+              <p class="author-location">Karachi</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card reveal-up">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Outstanding customer service and premium products. The traditional wear collection is absolutely stunning. Will definitely shop again!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MH</div>
+            <div class="author-info">
+              <h4>Maria Hassan</h4>
+              <p class="author-location">Islamabad</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image-wrapper reveal-left">
+          <img src="https://images.unsplash.com/photo-1558769132-cb1aea3c8565?w=800" alt="About Kamal Apparel" class="about-image">
+          <div class="est-badge">
+            <span class="est-year">2019</span>
+            <span class="est-text">Est.</span>
+          </div>
+        </div>
+        
+        <div class="about-text reveal-right">
+          <h2>About Kamal Apparel</h2>
+          <p>Since 2019, Kamal Apparel has been Lahore's premier destination for luxury fashion. We specialize in premium fabrics, impeccable tailoring, and timeless designs that celebrate both traditional and contemporary style.</p>
+          <p>Our commitment to quality and customer satisfaction has made us a trusted name in Pakistani fashion. From casual wear to formal attire, from unstitched fabrics to ready-to-wear collections, we offer something special for every occasion.</p>
+          
+          <div class="features-grid">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-gem"></i>
+              </div>
+              <div class="feature-text">
+                <h4>Premium Fabrics</h4>
+                <p>Only the finest materials</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-hands"></i>
+              </div>
+              <div class="feature-text">
+                <h4>Handcrafted Quality</h4>
+                <p>Attention to every detail</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-truck"></i>
+              </div>
+              <div class="feature-text">
+                <h4>COD Available</h4>
+                <p>Nationwide delivery</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-undo"></i>
+              </div>
+              <div class="feature-text">
+                <h4>Easy Returns</h4>
+                <p>Hassle-free process</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lookbook -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title reveal-up">Lookbook</h2>
+      <p class="section-subtitle reveal-up">Get inspired by our latest styling</p>
+      
+      <div class="lookbook-grid">
+        <div class="lookbook-item reveal-scale">
+          <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=800" alt="Lookbook 1" class="lookbook-image">
+          <div class="lookbook-overlay">
+            <h3>Modern Elegance</h3>
+          </div>
+        </div>
+        
+        <div class="lookbook-item reveal-scale">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800" alt="Lookbook 2" class="lookbook-image">
+          <div class="lookbook-overlay">
+            <h3>Timeless Grace</h3>
+          </div>
+        </div>
+        
+        <div class="lookbook-item reveal-scale">
+          <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800" alt="Lookbook 3" class="lookbook-image">
+          <div class="lookbook-overlay">
+            <h3>Traditional Charm</h3>
+          </div>
+        </div>
+        
+        <div class="lookbook-item reveal-scale">
+          <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800" alt="Lookbook 4" class="lookbook-image">
+          <div class="lookbook-overlay">
+            <h3>Contemporary Style</h3>
+          </div>
+        </div>
+        
+        <div class="lookbook-item reveal-scale">
+          <img src="https://images.unsplash.com/photo-1558769132-cb1aea3c8565?w=800" alt="Lookbook 5" class="lookbook-image">
+          <div class="lookbook-overlay">
+            <h3>Fabric Stories</h3>
+          </div>
+        </div>
+        
+        <div class="lookbook-item reveal-scale">
+          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800" alt="Lookbook 6" class="lookbook-image">
+          <div class="lookbook-overlay">
+            <h3>Artisan Craft</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal-up">Get In Touch</h2>
+      <p class="section-subtitle reveal-up">We'd love to hear from you</p>
+      
+      <div class="contact-content">
+        <div class="contact-info reveal-left">
+          <h3>Contact Information</h3>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Address</h4>
+              <p>123 Fashion Street, Gulberg III<br>Lahore, Punjab, Pakistan</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <p>+92 300 1234567<br>+92 42 35123456</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>info@kamalapparel.com<br>support@kamalapparel.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Business Hours</h4>
+              <p>Mon - Sat: 10:00 AM - 8:00 PM<br>Sunday: 12:00 PM - 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+        
+        <form class="contact-form reveal-right" id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Your Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter-section reveal-up">
+    <div class="container">
+      <h2>Stay in the Loop</h2>
+      <p>Be the first to know about new arrivals, exclusive offers & style updates.</p>
+      
+      <form class="newsletter-form" id="newsletter-form">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">
+          <i class="fas fa-envelope"></i> Subscribe
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer reveal-up">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">Kamal Apparel</div>
+          <p class="footer-description">Premium luxury fashion brand in Lahore, specializing in men's and women's clothing, unstitched fabrics, and traditional wear since 2019.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#men">Men's Collection</a></li>
+            <li><a href="#women">Women's Collection</a></li>
+            <li><a href="#shop">Casual Wear</a></li>
+            <li><a href="#shop">Formal Wear</a></li>
+            <li><a href="#shop">Traditional Wear</a></li>
+            <li><a href="#shop">Unstitched Fabric</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Help</h4>
+          <ul class="footer-links">
+            <li><a href="#contact">Customer Support</a></li>
+            <li><a href="#shop">Shipping Info</a></li>
+            <li><a href="#shop">Returns & Exchange</a></li>
+            <li><a href="#shop">Size Guide</a></li>
+            <li><a href="#shop">FAQs</a></li>
+            <li><a href="admin/login.html">Admin Login</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" class="social-link" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="https://wa.me/923001234567" target="_blank" class="social-link" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://tiktok.com" target="_blank" class="social-link" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kamal Apparel. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div class="cart-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h3>Shopping Cart</h3>
+      <button class="cart-close" aria-label="Close cart">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    
+    <div class="cart-body">
+      <div class="cart-empty" style="display: block;">
+        <i class="fas fa-shopping-cart"></i>
+        <p>Your cart is empty</p>
+        <button class="btn btn-primary" onclick="closeCart(); document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">Start Shopping</button>
+      </div>
+      
+      <div class="cart-content" style="display: none;">
+        <div id="cart-items"></div>
+      </div>
+    </div>
+    
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cart-total">PKR 0</span>
+      </div>
+      <button class="btn btn-primary">
+        <i class="fas fa-lock"></i> Proceed to Checkout
+      </button>
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay"></div>
+  <div class="modal" id="quick-view-modal">
+    <div class="modal-header">
+      <h3>Quick View</h3>
+      <button class="modal-close" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="modal-body">
+      <!-- Content will be dynamically loaded -->
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
